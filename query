@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Make-it All Helpdesk</title>
+<style>
+.center {
+	text-align:center;
+}
+
+form { 
+	margin: 0 auto; 
+	width: 250px;
+}
+
+</style>
+</head>
+<!--Creates headers for the website-->
+<h2 class="center">Make-it All Helpdesk</h2>
+<h3 class="center">Report</h1> 
+<body>
+	<a href="query.php" class="center">Query Creator</a> 
+	<a href="update.php" class="center">Update Query</a> 
+	<form action="" method="post" id="view">
+		<table margin=:auto>
+
+		  <tr>
+			<td><label for="caller">Caller Name</label></td>
+			<td>
+			  <!-- -->
+			  <input name="caller" type="text" class="larger" id="caller" pattern="[A-Za-z]" size="12" required />
+			</td>
+		  </tr>
+		  
+		  <tr>
+			<td><label for="Time">Time</label></td>
+			<td>
+			  <!-- -->
+			  <input name="Time" type="time" class="larger" id="time" size="12" required />
+			</td>
+		  </tr>
+		  
+		  <tr>
+			<td><label for="problem">Problem Type</label></td>
+			<td>
+			  <!-- -->
+			  <select name="problem" id="problem">
+				<option value="Total Medals" selected>Printer</option>
+				<option value="Gold Medals">Typing</option>
+				<option value="cyclists">Other</option>
+			  </select>
+			</td>
+		  </tr>
+		  
+		  <tr>
+			<td><label for="serial">Serial Number</label></td>
+			<td>
+			  <!-- -->
+			  <input name="serial" type="text" class="larger" id="serial" pattern="[A-Za-z0-9]" size="12" required />
+			</td>
+		  </tr>
+		  
+		  <tr>
+			<td><label for="notes">Notes</label></td>
+			<td>
+			  <!-- -->
+			  <textarea size="12"></textarea>
+			</td>
+		  </tr>
+		  
+		  <tr>
+			<td></td>
+			<td><input type="submit" name="submit" id="submit" value="Submit" class="larger" /></td>
+		  </tr>
+		</table>
+	</form>
+<body>
+</html>
